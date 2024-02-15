@@ -7,8 +7,7 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const corsOptions = require('./config/corsOptions');
-require('dotenv').config()
-// const ErrorHandler = require('./utils/ErrorHandler')
+require('dotenv').config();
 
 // middleware
 app.use(logger);
@@ -17,12 +16,6 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
 app.use('/', express.static(path.join(__dirname, '/public')));
-
-// if (process.env.NODE_ENV !== 'PRODUCTION') {
-//   require('dotenv').config({
-//     path: 'config/.env'
-//   });
-// }
 
 // uploads file
 app.use('/resources', express.static(path.join(__dirname, 'uploads')));

@@ -1,0 +1,35 @@
+{
+  "name": "multi-vendor-front-end",
+  "description": "E-Commerce-multi-vendor Project",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "latest",
+    "@emotion/styled": "latest",
+    "@mui/material": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-redux": "latest",
+    "react-router-dom": "latest",
+    "react-toastify": "latest",
+    "country-state-city": "latest",
+    "lottie-react": "latest",
+    "@reduxjs/toolkit": "latest",
+    "@mui/icons-material": "latest"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "latest",
+    "eslint": "latest",
+    "eslint-plugin-react": "latest",
+    "eslint-plugin-react-hooks": "latest",
+    "eslint-plugin-react-refresh": "latest",
+    "vite": "latest"
+  }
+}

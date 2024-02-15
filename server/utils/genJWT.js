@@ -1,8 +1,10 @@
 const jwt = require('jsonwebtoken');
-require('dotenv').config()
+require('dotenv').config();
 
 const createActivationToken = (user) => {
-  return jwt.sign(user, process.env.ACTIVATION_TOKEN_SECRET, { expiresIn: process.env.ACTIVATION_TOKEN_EXPIRES });
+  return jwt.sign(user, process.env.ACTIVATION_TOKEN_SECRET, {
+    expiresIn: process.env.ACTIVATION_TOKEN_EXPIRES
+  });
 };
 const sendToken = async (user, statusCode, res) => {
   const accessToken = await user.getJwtAccessToken();
